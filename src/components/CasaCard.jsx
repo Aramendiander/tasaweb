@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import casa from '../assets/casa.jpg'
 import { FaRegMap } from "react-icons/fa6";
 import { TbBath, TbBed, TbRuler } from "react-icons/tb";
-import './casacard.css'
 
 
 
