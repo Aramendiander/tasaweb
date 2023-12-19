@@ -1,0 +1,20 @@
+.landing-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 30%;
+  background-color: #FFFFFF;
+}
+
+.form-inputs{
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+.label-form{
+  color: black;
+}
+
+
+
