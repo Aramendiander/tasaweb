@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+.landing-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 30%;
+  background-color: #FFFFFF;
+}
+
+.form-inputs{
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  line-height: 50px;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px;
+  font-weight: 300;
+  padding-left: 20px;
+  font-size: 16px;
+  
+}
+
+.label-form{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px;
+  font-weight: 300;
+}
+
+.checkbox-div{
+  border: 1px solid #000000;
+  border-radius: 10px;
+  line-height: 50px;
+  margin: 20px;
+  font-weight: 300;
+}
+
+#tipo{
+  border: 1px solid #000000;
+  border-radius: 10px;
+  line-height: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-submit{
+  border-radius: 10px;
+  line-height: 50px;
+  color: white;
+  background-color: #CC0001;
+  margin: 20px;
+
+}
+
+
+#parking,
+#terraza{
+ margin-left: 200px;
+}
+
+#balcon{
+  margin-left: 203px;
+}
+
+#ascensor{
+  margin-left: 187px;
+}
+
+

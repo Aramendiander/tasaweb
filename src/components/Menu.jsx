@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import logo from '../../public/logo.png'
+import Form from '../components//form/Form.jsx';
 
 const Menu = () => {
     return (
@@ -19,7 +20,17 @@ const Menu = () => {
                 </ul>
             </nav>
         </div>
+
     );
 };
+
+const Home = () => {
+    return (
+        <div>
+            <h1>Home</h1>
+            <p>This is the home page</p>
+        </div>
+    );
+}
 
 export default Menu;
