@@ -14,8 +14,6 @@ const Tasacion = () => {
     const restrooms = queryParameters.get("restrooms")
     const ascensor = queryParameters.get("ascensor")
     const prediction = queryParameters.get("prediction")
-
-
     const ccaa = queryParameters.get("ccaa")
     
 
