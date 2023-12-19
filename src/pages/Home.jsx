@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, redirect } from 'react-router-dom';
 import Form from '../components/form/Form.jsx';
+import './home.css';
 
 const Home = () => {
 
@@ -11,20 +12,23 @@ const Home = () => {
         console.log(formData.bedrooms)
         console.log(formData.restrooms)
         console.log(formData.ascensor)
+        console.log(formData)
         const response = await fetch(`https://dpf0.pythonanywhere.com/predict?surface=${formData.surface}&bedrooms=${formData.bedrooms}&restrooms=${formData.restrooms}&ascensor=${formData.ascensor}`)
         const data = await response.json();
         console.log(data)
+        window.location.href = `/resultado?surface=${formData.surface}&bedrooms=${formData.bedrooms}&restrooms=${formData.restrooms}&ascensor=${formData.ascensor}&prediction=${data.prediction}`;
+
     }
 
     return (
-        <div>
+        <div className='home-container'>
             <main className='home-main'>
                 <section>
-                    <h1>¿Vas a alquilar?<br />¡Descubre cuanto vale tu inmueble!</h1>
+                    <h1 className='titulo-home'>¿Vas a alquilar?<br />¡Descubre cuanto<br>
+                    </br> vale tu inmueble!</h1>
                 </section>
-                <div className='home-container'>
+                <div className='form-container'>
                     <div>
-                        <h1>Home</h1>
                         <Outlet />
                         <Form onSubmit={handleFormSubmit} />
                     </div>

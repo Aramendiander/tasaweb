@@ -4,6 +4,13 @@ import CasaCard from '../components/CasaCard';
 
 const Tasacion = () => {
 
+    const queryParameters = new URLSearchParams(window.location.search)
+    const surface = queryParameters.get("surface")
+    const bedrooms = queryParameters.get("bedrooms")
+    const restrooms = queryParameters.get("restrooms")
+    const ascensor = queryParameters.get("ascensor")
+    const prediction = queryParameters.get("prediction")
+    
 
     return (
 
@@ -16,7 +23,7 @@ const Tasacion = () => {
                     <h1>¿Cuánto vale?</h1>
                     <p>Cuánto vale tu inmueble según tu tipo de vivienda</p>
                 </div>
-                <CasaCard />
+                <CasaCard surface={surface} bedrooms={bedrooms} restrooms={restrooms} ascensor={ascensor} prediction={prediction} />
             </div>
         </main>
 

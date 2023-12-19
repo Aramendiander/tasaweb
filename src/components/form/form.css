@@ -2,39 +2,54 @@
 
 
 .landing-form{
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 30%;
+  width: 400px;
   background-color: #FFFFFF;
+  border-radius: 10px;
+  margin-left: 300px;
+  height: 700px;
+}
+
+.form-container {
+  display:flex;
+  align-items: center;
 }
 
 .form-inputs{
   color: black;
   border: 1px solid #000000;
   border-radius: 10px;
-  line-height: 50px;
+  line-height: 40px;
   font-family: 'Poppins', sans-serif;
-  margin: 20px;
+  margin: 14px;
   font-weight: 300;
   padding-left: 20px;
-  font-size: 16px;
+  font-size: 14px;
+  cursor: pointer;
+
   
 }
 
 .label-form{
   color: black;
   font-family: 'Poppins', sans-serif;
-  margin: 20px;
+  margin: 14px;
   font-weight: 300;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 11px;
 }
 
 .checkbox-div{
   border: 1px solid #000000;
   border-radius: 10px;
-  line-height: 50px;
-  margin: 20px;
+  line-height: 30px;
+  margin: 14px;
   font-weight: 300;
+  cursor: pointer;
 }
 
 #tipo{
@@ -46,11 +61,22 @@
 
 .form-submit{
   border-radius: 10px;
-  line-height: 50px;
+  line-height: 40px;
   color: white;
   background-color: #CC0001;
   margin: 20px;
 
+}
+
+#parking,
+#terraza,
+#balcon,
+#ascensor:checked{
+    background-color: #04A96D;
+}
+
+#tipo{
+  margin-top: 20px;
 }
 
 
@@ -67,4 +93,13 @@
   margin-left: 187px;
 }
 
+.lupa-icon{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
 
+.form-submit{
+  font-size: 18px;
+  font-weight: 700;
+}

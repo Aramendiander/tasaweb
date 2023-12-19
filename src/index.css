@@ -110,6 +110,7 @@ button:focus-visible {
   height: 745px;
   background-image: linear-gradient(black, black), url(../public/background.png);
   background-blend-mode: saturation;
+  margin-top: 20px;
 }
 
 
