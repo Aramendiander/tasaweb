@@ -70,6 +70,7 @@ a:hover {
   display:flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
 
 
@@ -122,6 +123,7 @@ footer {
   height: 40dvh;
   background-image: linear-gradient(black, black), url(/background.png);
   background-blend-mode: saturation;
+  background-size:contain;
 }
 
 .header_resultado p {
