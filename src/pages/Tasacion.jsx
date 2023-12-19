@@ -5,9 +5,6 @@ import { IoSearchOutline } from "react-icons/io5";
 
 
 const Tasacion = () => {
-
-    const navigate = useNavigate();
-
     const queryParameters = new URLSearchParams(window.location.search)
     const surface = queryParameters.get("surface")
     const bedrooms = queryParameters.get("bedrooms")
