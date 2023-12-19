@@ -34,7 +34,7 @@ const Form = () => {
             <label for="parking" className='label-form'>Terraza</label>
             <input type="checkbox" id="terraza" name="terraza" value="terraza" className='form-inputs' />
             </div>
-            <button type="submit" className='form-submit'>Descubre<IoSearchOutline className="back-icon" />{IoSearchOutline}</button>
+            <button type="submit" className='form-submit'>Descubre<IoSearchOutline className="lupa-icon" />{IoSearchOutline}</button>
           </form>
         </div>
     );
