@@ -158,8 +158,36 @@ box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.09);
   align-items: center;
 }
 
+.localizacion {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ccaa {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
 .iconos {
   border-bottom: 1px solid lightgray;
+  display:flex;
+  align-items: center;
+}
+
+.iconos div {
+  display:flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.iconos div:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.iconos div span {
+  margin-left: 0.5rem;
 }
 
 .fechas {

@@ -10,6 +10,7 @@ const Tasacion = () => {
     const restrooms = queryParameters.get("restrooms")
     const ascensor = queryParameters.get("ascensor")
     const prediction = queryParameters.get("prediction")
+    const ccaa = queryParameters.get("ccaa")
     
 
     return (
@@ -23,7 +24,7 @@ const Tasacion = () => {
                     <h1>¿Cuánto vale?</h1>
                     <p>Cuánto vale tu inmueble según tu tipo de vivienda</p>
                 </div>
-                <CasaCard surface={surface} bedrooms={bedrooms} restrooms={restrooms} ascensor={ascensor} prediction={prediction} />
+                <CasaCard surface={surface} bedrooms={bedrooms} restrooms={restrooms} ascensor={ascensor} ccaa={ccaa} prediction={prediction} />
             </div>
         </main>
 
