@@ -1,5 +1,5 @@
 import CasaCard from '../components/CasaCard';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './tasacion.css';
 import { IoSearchOutline } from "react-icons/io5";
 
@@ -27,7 +27,7 @@ const Tasacion = () => {
             <div className="header_resultado">
                 <p className='p-header_resultado'>¿Vas a alquilar?<br />¡Descubre cuanto<br></br> vale tu inmueble!</p>
                 <div className='button-div'>
-                <button className='button-header_resultado' onClick={handleNuevaBusqueda}>Nueva Búsqueda<IoSearchOutline className="back-icon-tasacion" /></button>
+                <Link to={'/'} className='button-header_resultado'>Nueva Búsqueda<IoSearchOutline className="back-icon-tasacion" /></Link>
                 </div>
             </div>
             <div className='resultado_content'>

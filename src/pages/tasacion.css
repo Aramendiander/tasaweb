@@ -25,9 +25,9 @@
 }
 
 .button-header_resultado{
-  width: 420px;
+  width: 300px;
   background-color: #CC0001;
-  height: 70px;
+  height: 50px;
   margin-left: 550px;
   margin-top: 220px;
   border-radius: 10px;
@@ -36,6 +36,7 @@
   font-weight: 600;
   cursor: pointer;
   z-index: 10;
+  align-items: center;
 }
 
 .button-div{
