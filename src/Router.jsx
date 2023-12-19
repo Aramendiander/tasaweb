@@ -8,7 +8,6 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
-    /*   errorElement: <NotFound />, */
       children: [
         {
           path: "/",
@@ -18,15 +17,6 @@ const router = createBrowserRouter([
             path: "/resultado",
             element: <Tasacion />
           },
-          /*
-          {
-            path: "/capital-guessing-game",
-            element: <CapitalGame />
-          },
-          {
-            path: "learn-about-countries",
-            element: <Wiki />
-          } */
       ]
     },
     

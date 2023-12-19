@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
 import logoblanco from '../../public/logoblanco.png'
 import { FaXTwitter, FaSquareFacebook, FaLinkedin, FaSquareInstagram } from "react-icons/fa6";
 
