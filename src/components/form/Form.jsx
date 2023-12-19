@@ -5,6 +5,7 @@ import { IoSearchOutline } from "react-icons/io5";
 const Form = (props) => {
   const [formState, setFormState] = useState({
     tipo: '',
+    ccaa: '',
     surface: '',
     bedrooms: '',
     restrooms: '',
@@ -43,6 +44,27 @@ const Form = (props) => {
           <option value="àtico">Ático</option>
           <option value="chalet">Chalet</option>
           <option value="apartamento">Apartamento</option>
+        </select>
+        <select name="ccaa" id="ccaa" form="ccaa-form" className='form-inputs' value={formState.ccaa} onChange={handleChange}>
+          <option value="" disabled>CCAA</option>
+          <option value="andalucia">Andalucía</option>
+          <option value="aragon">Aragón</option>
+          <option value="asturias">Asturias</option>
+          <option value="cantabria">Cantabria</option>
+          <option value="castilla y leon">Castilla y León</option>
+          <option value="castilla la mancha">Castilla La Mancha</option>
+          <option value="catalunya">Catalunya</option>
+          <option value="comunitat valencia">Comunitat Valenciana</option>
+          <option value="euskal herria">Euskal Herria</option>
+          <option value="extremadura">Extremadura</option>
+          <option value="galicia">Galicia</option>
+          <option value="islas canarias">Islas Canarias</option>
+          <option value="islas baleares">Islas Baleares</option>
+          <option value="la rioja">La Rioja</option>
+          <option value="madrid">Madrid</option>
+          <option value="murcia">Murcia</option>
+          <option value="navarra">Navarra</option>
+
         </select>
         <input type='number' placeholder='Metros Cuadrados' className='form-inputs' name="surface" value={formState.surface} onChange={handleChange} />
         <input type="number" placeholder="Habitaciones" className='form-inputs' name="bedrooms" value={formState.bedrooms} onChange={handleChange} />
