@@ -15,10 +15,10 @@ const Footer = () => {
                     <p className='phone'>+34 123456789</p>
                     <p className="email">info@tasaweb.com</p>
                     <div className="socials">
-                        <FaXTwitter />
-                        <FaSquareFacebook />
-                        <FaLinkedin />
-                        <FaSquareInstagram />
+                        <FaXTwitter size={"1.5rem"} />
+                        <FaSquareFacebook size={"1.5rem"} />
+                        <FaLinkedin size={"1.5rem"} />
+                        <FaSquareInstagram size={"1.5rem"} />
                     </div>
                 </div>
             </section>
