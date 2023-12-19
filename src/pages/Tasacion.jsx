@@ -15,9 +15,7 @@ const Tasacion = () => {
     const ascensor = queryParameters.get("ascensor")
     const prediction = queryParameters.get("prediction")
 
-    const handleNuevaBusqueda = () => {
-        navigate('/');
-    };
+
     const ccaa = queryParameters.get("ccaa")
     
 
