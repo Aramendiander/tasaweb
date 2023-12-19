@@ -68,6 +68,23 @@ button:focus-visible {
 }
  */
 
+ body {
+  margin: 0;
+ }
+
  .navbackground {
   background-color:white;
+  display: flex;
+  flex-direction: row;
+  width: 100dvw;
  }
+
+ .menu {
+  width: 100%;
+ }
+
+ .menu ul {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
