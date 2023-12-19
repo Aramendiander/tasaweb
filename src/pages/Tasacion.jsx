@@ -1,4 +1,5 @@
 import CasaCard from '../components/CasaCard';
+import './tasacion.css';
 
 
 const Tasacion = () => {
@@ -15,7 +16,7 @@ const Tasacion = () => {
 
         <main >
             <div className="header_resultado">
-                <p>¿Vas a alquilar?<br />¡Descubre cuanto vale tu inmueble!</p>
+                <p className='p-header_resultado'>¿Vas a alquilar?<br />¡Descubre cuanto<br></br> vale tu inmueble!</p>
             </div>
             <div className='resultado_content'>
                 <div className="resultado_title">
