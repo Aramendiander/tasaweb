@@ -11,7 +11,6 @@ const Home = () => {
                 <section>
                     <h1>¿Vas a alquilar?<br />¡Descubre cuanto vale tu inmueble!</h1>
                 </section>
-                <button className="test">Descubre cuanto vale tu inmueble</button>
                 <div className='home-container'>
                     <div>
                         <h1>Home</h1>
