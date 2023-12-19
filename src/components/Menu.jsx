@@ -7,7 +7,9 @@ const Menu = () => {
     return (
         <div className="navbackground">
             <div className="navlogo">
-                <img src={logo} alt="" />
+                <Link to="/">
+                    <img src={logo} alt="" />
+                </Link>
             </div>
             <nav className="menu">
                 <ul>

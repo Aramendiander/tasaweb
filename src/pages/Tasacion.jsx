@@ -27,7 +27,7 @@ const Tasacion = () => {
             <div className="header_resultado">
                 <p className='p-header_resultado'>¿Vas a alquilar?<br />¡Descubre cuanto<br></br> vale tu inmueble!</p>
                 <div className='button-div'>
-                <Link to={'/'} className='button-header_resultado'>Nueva Búsqueda<IoSearchOutline className="back-icon-tasacion" /></Link>
+                <Link to={'/'} className='button-header_resultado'><IoSearchOutline className="back-icon-tasacion" />Nueva Búsqueda</Link>
                 </div>
             </div>
             <div className='resultado_content'>
