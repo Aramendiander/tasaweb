@@ -5,7 +5,7 @@ import logo from '../../public/logo.png'
 const Menu = () => {
     return (
         <div className="navbackground">
-            <div>
+            <div className="navlogo">
                 <img src={logo} alt="" />
             </div>
             <nav className="menu">
