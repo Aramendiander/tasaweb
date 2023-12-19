@@ -87,4 +87,22 @@ button:focus-visible {
   display:flex;
   flex-direction: row;
   justify-content: flex-end;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.navlogo {
+  padding: 0.3rem 5rem;
+}
+
+.menuitem{
+  margin-right: 2rem;
+
+}
+
+.menuitem a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }

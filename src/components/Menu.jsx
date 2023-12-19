@@ -6,7 +6,7 @@ import Form from '../components//form/Form.jsx';
 const Menu = () => {
     return (
         <div className="navbackground">
-            <div>
+            <div className="navlogo">
                 <img src={logo} alt="" />
             </div>
             <nav className="menu">
