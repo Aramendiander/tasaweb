@@ -24,13 +24,15 @@
   border-radius: 10px;
   line-height: 40px;
   font-family: 'Poppins', sans-serif;
-  margin: 14px;
+  margin: 9px;
   font-weight: 300;
   padding-left: 20px;
   font-size: 14px;
   cursor: pointer;
+}
 
-  
+select, .checkbox-div {
+  height: 40px;
 }
 
 .label-form{
@@ -47,7 +49,7 @@
   border: 1px solid #000000;
   border-radius: 10px;
   line-height: 30px;
-  margin: 14px;
+  margin: 9px;
   font-weight: 300;
   cursor: pointer;
 }

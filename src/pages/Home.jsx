@@ -1,13 +1,14 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import Form from '../components/form/Form.jsx';
 import './home.css';
 
 const Home = () => {
-
+    const navigate = useNavigate();
     const handleFormSubmit = async (formData) => {
         const response = await fetch(`https://dpf0.pythonanywhere.com/predict?surface=${formData.surface}&bedrooms=${formData.bedrooms}&restrooms=${formData.restrooms}&ascensor=${formData.ascensor}`)
         const data = await response.json();
-        window.location.href = `/resultado?surface=${formData.surface}&bedrooms=${formData.bedrooms}&restrooms=${formData.restrooms}&ascensor=${formData.ascensor}&prediction=${data.prediction}`;
+        navigate(`/resultado?surface=${formData.surface}&bedrooms=${formData.bedrooms}&restrooms=${formData.restrooms}&ascensor=${formData.ascensor}&ccaa=${formData.ccaa}&prediction=${data.prediction}`)
+
 
     }
 

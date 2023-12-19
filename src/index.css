@@ -52,8 +52,9 @@ a:hover {
 
 .menuitem{
   margin-right: 2rem;
-
+  list-style: none;
 }
+
 
 .menuitem a {
   text-decoration: none;
@@ -62,10 +63,13 @@ a:hover {
 }
 
 .home-main {
-  height: 745px;
-  background-image: linear-gradient(black, black), url(../src/assets/background.png);
+  height: 80dvh;
+  background-image: linear-gradient(black, black), url(/background.png);
   background-blend-mode: saturation;
   margin-top: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -116,7 +120,7 @@ footer {
 
 .header_resultado {
   height: 40dvh;
-  background-image: linear-gradient(black, black), url(../src/assets/background.png);
+  background-image: linear-gradient(black, black), url(/background.png);
   background-blend-mode: saturation;
 }
 
@@ -163,8 +167,38 @@ box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.09);
   align-items: center;
 }
 
+.localizacion {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ccaa {
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
 .iconos {
   border-bottom: 1px solid lightgray;
+  display:flex;
+  align-items: center;
+}
+
+.iconos div {
+  display:flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.iconos div:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.iconos div span {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .fechas {
