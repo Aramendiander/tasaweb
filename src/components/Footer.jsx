@@ -1,5 +1,5 @@
 import React from 'react';
-import logoblanco from '../../public/logoblanco.png'
+import logoblanco from '../assets/logoblanco.png'
 import { FaXTwitter, FaSquareFacebook, FaLinkedin, FaSquareInstagram } from "react-icons/fa6";
 
 

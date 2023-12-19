@@ -63,7 +63,7 @@ a:hover {
 
 .home-main {
   height: 745px;
-  background-image: linear-gradient(black, black), url(../public/background.png);
+  background-image: linear-gradient(black, black), url(../src/assets/background.png);
   background-blend-mode: saturation;
   margin-top: 20px;
 }
@@ -116,7 +116,7 @@ footer {
 
 .header_resultado {
   height: 40dvh;
-  background-image: linear-gradient(black, black), url(../public/background.png);
+  background-image: linear-gradient(black, black), url(../src/assets/background.png);
   background-blend-mode: saturation;
 }
 
