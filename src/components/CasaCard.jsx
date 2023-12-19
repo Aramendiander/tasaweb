@@ -2,7 +2,6 @@ import { React } from 'react';
 import { Link } from 'react-router-dom';
 import casa from '../assets/casa.jpg'
 import { FaRegMap } from "react-icons/fa6";
-import './casacard.css'
 
 
 
@@ -13,7 +12,7 @@ const CasaCard = (props) => {
         <article className='casacard-container'>
             <div className="casacard">
                 <img src={casa} alt="" />
-                <h2>Precio medio</h2>
+                <h2 className='casacard-h2'>Precio medio</h2>
                 <p><FaRegMap />Donostia San Sebastián, Gipúzcoa</p>
                 <p className='precio'>{props.prediction}€</p>
                 <div className='iconos'>
