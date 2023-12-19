@@ -2,16 +2,23 @@ import { useEffect, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import Form from '../components/form/Form.jsx';
 
-const Home = ( ) => {
+const Home = () => {
 
 
     return (
-        <div className='home-container'>
-            <div>
-                <h1>Home</h1>
-                <Outlet />
-                <Form />
-            </div>
+        <div>
+            <main className='home-main'>
+                <section>
+                    <h1>¿Vas a alquilar?<br />¡Descubre cuanto vale tu inmueble!</h1>
+                </section>
+                <div className='home-container'>
+                    <div>
+                        <h1>Home</h1>
+                        <Outlet />
+                        <Form />
+                    </div>
+                </div>
+            </main>
         </div>
     );
 }

@@ -3,9 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -76,7 +75,7 @@ button:focus-visible {
   background-color:white;
   display: flex;
   flex-direction: row;
-  width: 100dvw;
+  width: 100%;
  }
 
  .menu {
@@ -105,4 +104,132 @@ button:focus-visible {
   text-decoration: none;
   color: black;
   font-weight: 600;
+}
+
+.home-main {
+  height: 745px;
+  background-image: linear-gradient(black, black), url(../public/background.png);
+  background-blend-mode: saturation;
+}
+
+
+.test {
+  background-color: #CC0001;
+  height: 100px;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer {
+  display:flex;
+  flex-direction: row;
+  padding: 5rem 0 2rem 1rem;
+  color: white;
+}
+
+.footercontact {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.footercontact * {
+  margin-right: 2rem;
+}
+
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  margin-bottom: 0;
+  color: lightgray;
+  padding-bottom: 3rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.header_resultado {
+  height: 40dvh;
+  background-image: linear-gradient(black, black), url(../public/background.png);
+  background-blend-mode: saturation;
+}
+
+.header_resultado p {
+  color: white;
+  font-size: 3rem;
+}
+
+.casacard-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.casacard {
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 33%;
+  margin-bottom: 5rem;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.09);
+-moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.09);
+box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.09);
+}
+
+.casacard img {
+  height: 15rem;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit:cover;
+}
+
+.precio {
+  color: #CC0001;
+  font-size: 2rem;
+  font-weight: 600;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconos {
+  border-bottom: 1px solid lightgray;
+}
+
+.fechas {
+  text-align: center;
+}
+
+.casacard a {
+  background-color: #CC0001;
+  padding: 1rem;
+  color: white;
+  border-radius: 1.5rem;
+  width: 50%;
+
+}
+
+.nuevabusqueda {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nuevabusqueda a {
+  text-align: center;
+}
+
+.resultado_title {
+  text-align: center;
+  margin-bottom: 4rem;
 }
