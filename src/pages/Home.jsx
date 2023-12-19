@@ -1,10 +1,24 @@
 import { useEffect, useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, redirect } from 'react-router-dom';
 import Form from '../components/form/Form.jsx';
 import './home.css';
 
 const Home = () => {
 
+    const handleFormSubmit = async (formData) => {
+        // handle form submission here
+        console.log(formData);
+        console.log(formData.surface)
+        console.log(formData.bedrooms)
+        console.log(formData.restrooms)
+        console.log(formData.ascensor)
+        console.log(formData)
+        const response = await fetch(`https://dpf0.pythonanywhere.com/predict?surface=${formData.surface}&bedrooms=${formData.bedrooms}&restrooms=${formData.restrooms}&ascensor=${formData.ascensor}`)
+        const data = await response.json();
+        console.log(data)
+        window.location.href = `/resultado?surface=${formData.surface}&bedrooms=${formData.bedrooms}&restrooms=${formData.restrooms}&ascensor=${formData.ascensor}&prediction=${data.prediction}`;
+
+    }
 
     return (
         <div className='home-container'>
@@ -13,10 +27,10 @@ const Home = () => {
                     <h1 className='titulo-home'>¿Vas a alquilar?<br />¡Descubre cuanto<br>
                     </br> vale tu inmueble!</h1>
                 </section>
-                <div className='home-container'>
+                <div className='form-container'>
                     <div>
                         <Outlet />
-                        <Form />
+                        <Form onSubmit={handleFormSubmit} />
                     </div>
                 </div>
             </main>

@@ -5,14 +5,16 @@ import { FaRegMap } from "react-icons/fa6";
 
 
 
-const CasaCard = (...valores) => {
+const CasaCard = (props) => {
+
+
     return (
         <article className='casacard-container'>
             <div className="casacard">
                 <img src={casa} alt="" />
                 <h2>Precio medio</h2>
                 <p><FaRegMap />Donostia San Sebastián, Gipúzcoa</p>
-                <p className='precio'>€6000,00</p>
+                <p className='precio'>{props.prediction}€</p>
                 <div className='iconos'>
                     <span>iconos</span>
                 </div>
