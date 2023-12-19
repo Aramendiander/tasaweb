@@ -76,7 +76,7 @@ button:focus-visible {
   background-color:white;
   display: flex;
   flex-direction: row;
-  width: 100dvw;
+  width: 100%;
  }
 
  .menu {
@@ -105,4 +105,43 @@ button:focus-visible {
   text-decoration: none;
   color: black;
   font-weight: 600;
+}
+
+.home-main {
+  height: 745px;
+  background-image: linear-gradient(black, black), url(../public/background.png);
+  background-blend-mode: saturation;
+}
+
+
+.test {
+  background-color: red;
+  height: 100px;
+}
+
+.footer {
+  display:flex;
+  flex-direction: row;
+  padding: 5rem 0 2rem 1rem;
+}
+
+.footercontact {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.footercontact *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
 }

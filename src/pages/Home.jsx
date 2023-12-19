@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
 
-const Home = ( ) => {
+const Home = () => {
 
 
     return (
         <div>
-            <h1>Home</h1>
+            <main className='home-main'>
+                <section>
+                    <h1>¿Vas a alquilar?<br />¡Descubre cuanto vale tu inmueble!</h1>
+                </section>
+                <button className="test">Descubre cuanto vale tu inmueble</button>
+            </main>
         </div>
     );
 }
